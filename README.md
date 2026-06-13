@@ -1,16 +1,33 @@
-# React + Vite
+# vibe-theme-web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page for [Vibe Theme](https://github.com/hector-mendoza/vibe-theme) — a family of 8 dark themes for VS Code & Cursor built around 2026 design trends.
 
-Currently, two official plugins are available:
+Built as a portfolio piece and deployed as a standalone SPA.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- [Vite](https://vite.dev/) + [React](https://react.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/) — page loader, scroll reveals, theme transitions
+- [Animate Icons](https://animateicons.in/) (`@animateicons/react/lucide`) — animated feature icons
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Theme switcher** — 8 interactive palette pills that update the entire page's colors in real time
+- **Live code previews** — each theme card renders syntax-highlighted code in that theme's exact colors
+- **Page loader** — cinematic curtain-lift entrance showcasing all 8 palette colors as ambient blobs + glowing chips
+- **Scroll-driven animations** — CSS `animation-timeline: view()` for section reveals (no JS scroll listeners)
+- **Mobile-first** — fully responsive from 375px up
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Related
+
+- Extension repo: [hector-mendoza/vibe-theme](https://github.com/hector-mendoza/vibe-theme)
+- VS Code Marketplace: [Vibe Theme](https://marketplace.visualstudio.com/items?itemName=HectorMendoza.vibe-theme)
+- Portfolio: [hectormendoza.me](https://hectormendoza.me)
