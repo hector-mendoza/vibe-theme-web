@@ -79,13 +79,13 @@ const SNIPPETS = {
 function tokenColor(type, accent, secondary, text, muted) {
   switch (type) {
     case 'keyword': return accent
-    case 'fn':      return secondary
-    case 'string':  return '#86efac'
+    case 'fn': return secondary
+    case 'string': return '#86efac'
     case 'comment': return muted
-    case 'type':    return secondary
-    case 'op':      return `${text}90`
-    case 'paren':   return `${text}cc`
-    default:        return text
+    case 'type': return secondary
+    case 'op': return `${text}90`
+    case 'paren': return `${text}cc`
+    default: return text
   }
 }
 
@@ -96,7 +96,7 @@ const CodeWindow = memo(function CodeWindow({ theme }) {
   return (
     <div
       style={{ background: bg, borderColor: `${accent}20` }}
-      className="rounded-2xl overflow-hidden border shadow-2xl w-full"
+      className="rounded-2xl overflow-hidden border shadow-2xl w-full rounded-b-none"
     >
       {/* Title bar */}
       <div

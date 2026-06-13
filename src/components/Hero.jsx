@@ -92,15 +92,15 @@ export default function Hero({ theme, themes, onThemeChange }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.35 }}
-        className="mt-10 flex flex-wrap items-center justify-center gap-4"
+        className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-sm sm:max-w-none"
       >
         <a
           href="https://marketplace.visualstudio.com/items?itemName=HectorMendoza.vibe-theme"
           target="_blank"
           rel="noopener noreferrer"
           style={{ background: theme.accent }}
-          className="inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold text-black
-                     hover:opacity-90 active:scale-95 transition-all duration-150 shadow-lg"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-7 py-3
+                     text-sm font-semibold text-black hover:opacity-90 active:scale-95 transition-all duration-150 shadow-lg"
         >
           Install from Marketplace
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -110,8 +110,8 @@ export default function Hero({ theme, themes, onThemeChange }) {
         <button
           onClick={copyInstall}
           style={{ borderColor: `${theme.accent}30`, color: 'white' }}
-          className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-mono
-                     hover:bg-white/5 active:scale-95 transition-all duration-150"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border
+                     px-5 py-3 text-xs sm:text-sm font-mono hover:bg-white/5 active:scale-95 transition-all duration-150"
         >
           {copied ? '✓ Copied!' : 'ext install HectorMendoza.vibe-theme'}
         </button>
