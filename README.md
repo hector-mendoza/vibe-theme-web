@@ -1,23 +1,66 @@
-# vibe-theme-web
+<p align="center">
+  <img src="public/logo.svg" alt="Vibe Theme" width="64" height="64" />
+</p>
 
-Landing page for [Vibe Theme](https://github.com/hector-mendoza/vibe-theme) — a family of 8 dark themes for VS Code & Cursor built around 2026 design trends.
+<h1 align="center">Vibe Theme</h1>
 
-Built as a portfolio piece and deployed as a standalone SPA.
+<p align="center">
+  <strong>Eight meticulously crafted dark themes for VS Code & Cursor.</strong><br />
+  Built around the design language shaping modern software in 2026.
+</p>
+
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=HectorMendoza.vibe-theme">Install</a>
+  ·
+  <a href="https://github.com/hector-mendoza/vibe-theme">Extension</a>
+  ·
+  <a href="https://hectormendoza.me">Portfolio</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/themes-8-8B5CF6?style=flat-square" alt="8 themes" />
+  <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=flat-square" alt="MIT License" />
+  <img src="https://img.shields.io/badge/platform-VS%20Code%20%26%20Cursor-111118?style=flat-square" alt="VS Code and Cursor" />
+</p>
+
+---
+
+## Overview
+
+This repository powers the **Vibe Theme** marketing site — a single-page experience where every palette, animation, and code preview mirrors the extension itself. Switch themes in real time, explore live syntax previews, and install directly from the Marketplace without leaving the page.
+
+Designed as a portfolio-grade product surface: cinematic on first load, fast under the hood, and responsive from 375px to ultrawide.
+
+## The Collection
+
+| Theme | Character |
+| --- | --- |
+| **Mood Mode Dark** | The 2026 SaaS dashboard standard — violet and cyan, refined and confident |
+| **Transformative Teal** | Clean, resilient, Earth-forward |
+| **AI Iridescence** | Fuchsia-to-violet with emerald pops |
+| **Warm Biophilic** | Organic warmth for long sessions |
+| **Soft-Tech Pastel** | Calm focus without sacrificing contrast |
+| **Midnight Moss** | Terminal-grade contrast with electric green |
+| **Arid Stone** | Desert canyon darks, electric coral |
+| **Vibe Theme** | Material Ocean — where it all started |
+
+## Experience
+
+- **Live theme switcher** — palette pills update the entire page instantly, from ambient glows to syntax tokens
+- **Syntax-accurate previews** — each card renders code in that theme's exact accent, secondary, and muted colors
+- **Cinematic loader** — a curtain-lift entrance with all eight palette colors as ambient light
+- **Scroll-driven reveals** — CSS `animation-timeline: view()` for section entrances, no scroll listeners
+- **One-click install** — copy the extension ID or jump straight to the Marketplace
 
 ## Stack
 
-- [Vite](https://vite.dev/) + [React](https://react.dev/)
-- [Tailwind CSS v4](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/) — page loader, scroll reveals, theme transitions
-- [Animate Icons](https://animateicons.in/) (`@animateicons/react/lucide`) — animated feature icons
-
-## Features
-
-- **Theme switcher** — 8 interactive palette pills that update the entire page's colors in real time
-- **Live code previews** — each theme card renders syntax-highlighted code in that theme's exact colors
-- **Page loader** — cinematic curtain-lift entrance showcasing all 8 palette colors as ambient blobs + glowing chips
-- **Scroll-driven animations** — CSS `animation-timeline: view()` for section reveals (no JS scroll listeners)
-- **Mobile-first** — fully responsive from 375px up
+| Layer | Choice |
+| --- | --- |
+| Build | [Vite](https://vite.dev/) |
+| UI | [React 19](https://react.dev/) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com/) |
+| Motion | [Framer Motion](https://www.framer.com/motion/) |
+| Icons | [Animate Icons](https://animateicons.in/) |
 
 ## Development
 
@@ -26,8 +69,21 @@ npm install
 npm run dev
 ```
 
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local dev server |
+| `npm run build` | Production build to `dist/` |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run ESLint |
+
 ## Related
 
-- Extension repo: [hector-mendoza/vibe-theme](https://github.com/hector-mendoza/vibe-theme)
-- VS Code Marketplace: [Vibe Theme](https://marketplace.visualstudio.com/items?itemName=HectorMendoza.vibe-theme)
-- Portfolio: [hectormendoza.me](https://hectormendoza.me)
+- **Extension source** — [github.com/hector-mendoza/vibe-theme](https://github.com/hector-mendoza/vibe-theme)
+- **VS Code Marketplace** — [HectorMendoza.vibe-theme](https://marketplace.visualstudio.com/items?itemName=HectorMendoza.vibe-theme)
+- **Author** — [hectormendoza.me](https://hectormendoza.me)
+
+---
+
+<p align="center">
+  <sub>MIT License · Made by <a href="https://hectormendoza.me">Hector Mendoza</a></sub>
+</p>
